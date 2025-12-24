@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Цитаты Андрея Владимировича</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #4a6491;
+        }
+        
+        .quote-box {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            border-left: 5px solid #4a6491;
+            text-align: center;
+        }
+        
+        #quotePic {
+            max-width: 100%;
+            height: 250px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+        
+        #quoteText {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #2c3e50;
+            font-style: italic;
+            margin: 15px 0;
+        }
+        
+        #quoteButton {
+            background: linear-gradient(to right, #4a6491, #2c3e50);
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 20px auto;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        #quoteButton:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(to right, #2c3e50, #4a6491);
+        }
+        
+        .home-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #4a6491;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border: 1px solid #4a6491;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .home-link:hover {
+            background: #4a6491;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .quote-index {
+            display: inline-block;
+            background: #4a6491;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-quote-right"></i> Цитаты Андрея Владимировича</h1>
+        
+        <div class="quote-box">
+            <div class="quote-index">Цитата #<span id="quoteIndex">-</span></div>
+            
+            <!-- ФИКС: задаем начальную картинку прямо в HTML -->
+            <img id="quotePic" src="static/img/quotesmain.jpg" alt="Иллюстрация к цитате">
+            
+            <i><p id="quoteText">Нажмите кнопку ниже, чтобы получить случайную цитату</p></i>
+        </div>
+        
+        <button id="quoteButton" onclick="quote()">
+            <i class="fas fa-random"></i> Получить цитату
+        </button>
+        
+        <br>
+        <a href="index.html" class="home-link">
+            <i class="fas fa-home"></i> На главную страницу
+        </a>
+    </div>
+    
+    <script src="static/js/quotes.js"></script>
+</body>
+</html>

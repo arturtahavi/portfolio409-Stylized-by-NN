@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="static/js/bulb.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+        }
+        
+        .home-link {
+            display: inline-block;
+            margin-top: 25px;
+            color: #4a6491;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 10px 15px;
+            border: 1px solid #4a6491;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+        
+        .home-link:hover {
+            background: #4a6491;
+            color: white;
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <button id="BtnOn" style="background-color: lightgray;" onclick="turnOn()">ВКЛ</button>
+
+    <img id="BulbOff" style="display: inline;" src="static/img/pic_bulboff.gif">
+    <img id="BulbOn" style= "display: none;" src="static/img/pic_bulbon.gif">
+
+    <button id="BtnOff" style="background-color: gray;" onclick="turnOff()">ВЫКЛ</button>
+   <br>
+        <a href="index.html" class="home-link">
+            <i class="fas fa-home"></i> На главную страницу
+        </a>
+
+</body>
+</html>

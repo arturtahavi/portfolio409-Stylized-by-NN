@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Проекты Артура Тахавутдинова</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(to bottom, #f8f9fa, #e9ecef);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #4a6491;
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #4a6491;
+            font-size: 1.1rem;
+        }
+        
+        .projects-section {
+            margin: 30px 0;
+        }
+        
+        .project-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .project-link {
+            display: block;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            color: #2c3e50;
+            border: 1px solid #e0e0e0;
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        
+        .project-link:hover {
+            background: #4a6491;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-color: #4a6491;
+        }
+        
+        .project-link:hover .project-icon {
+            color: white;
+        }
+        
+        .project-icon {
+            font-size: 1.8rem;
+            color: #4a6491;
+            margin-bottom: 10px;
+            transition: color 0.3s ease;
+        }
+        
+        .project-name {
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        .badge {
+            display: inline-block;
+            background: #4a6491;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin-top: 10px;
+        }
+        
+        @media (max-width: 600px) {
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-laptop-code"></i> Артур Тахавутдинов</h1>
+            <p class="subtitle">Добро пожаловать на мою страницу с проектами</p>
+            <div class="badge">8 проектов</div>
+        </div>
+        
+        <div class="projects-section">
+            <h2 style="color: #2c3e50; text-align: center; margin-bottom: 20px;">
+                <i class="fas fa-folder-open"></i> Мои проекты
+            </h2>
+            
+            <div class="project-grid">
+                <!-- ЛЕВЫЙ СТОЛБИК -->
+                <a href="hello.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-hand-paper"></i>
+                    </div>
+                    <div class="project-name">Страница с приветствием</div>
+                </a>
+                
+                <a href="output.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <div class="project-name">Страница с алёртом</div>
+                </a>
+                
+                <a href="bulb.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <div class="project-name">Лампочка</div>
+                </a>
+                
+                <a href="trafficlight.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-traffic-light"></i>
+                    </div>
+                    <div class="project-name">Светофор</div>
+                </a>
+                
+                <!-- ПРАВЫЙ СТОЛБИК -->
+                <a href="rps.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-hand-scissors"></i>
+                    </div>
+                    <div class="project-name">Камень-Ножницы-Бумага</div>
+                </a>
+                
+                <a href="weather.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="project-name">Погода в Казани</div>
+                </a>
+                
+                <a href="quotes.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-quote-right"></i>
+                    </div>
+                    <div class="project-name">Цитаты Андрея Владимировича</div>
+                </a>
+                
+                <a href="nn.html" class="project-link">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-name">Общение с нейросетью</div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>Создано для изучения веб-разработки</p>
+        </div>
+    </div>
+</body>
+</html>
